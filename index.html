@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bat Waves</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section id="main_section">
+      <header>
+        <h1 id="main_h1">BAT WAVES</h1>
+        <button type="button" class="explainBtn">&#63;</button>
+        <div id="inGame">
+          <div class="arrowsKey"></div>
+          <div class="spaceKey">
+            <div class="atk skill"></div>
+          </div>
+          <div class="zKey">
+            <div class="skill1 skill">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="xKey">
+            <div class="skill2 skill">
+              <div class="coolBg"></div>
+              <div class="boostBg"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="bg">
+        <img src="img/startImg.png" alt="" />
+        <button type="button" class="start"></button>
+        <ol class="explain">
+          <li>
+            <h2>조작법</h2>
+            <ul>
+              <li><strong class="head">방향키</strong> - 이동</li>
+              <li><strong class="head">SpaceBar</strong> - 기본 공격</li>
+              <li>
+                <strong class="head">Zkey</strong> - 특수 공격 (시작시 2개 / 3개 까지 충전 가능)
+              </li>
+              <li>
+                <strong class="head">Xkey</strong> - 이동 스킬 (누르고 있는 동안 이동속도 증가 /
+                버튼 떼고 쿨타임 5초)
+              </li>
+              <li class="red">* 한글 , CapsLock 을 해제해주세요 *</li>
+            </ul>
+          </li>
+          <li>
+            <h2>설명</h2>
+            <ul>
+              <li><strong class="head">매</strong> - 기본 공격으로 제거 가능</li>
+              <li>
+                <strong class="head">독수리</strong> - 기본 공격으로 제거 불가능 / 발톱공격 함 /
+                특수 공격으로 제거 가능
+              </li>
+              <li>
+                <strong class="head">목숨</strong> - 2개 / 적과 닿거나, 발톱공격에 맞으면 1개
+                감소하며 2초간 무적
+              </li>
+              <li><strong class="head">과일 아이템</strong> - 특수 공격 1개 추가</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div id="clearBg">
+        <img src="img/clearBg.png" alt="" />
+        <p></p>
+      </div>
+      <p id="purpose">5,000점 달성 시 클리어!</p>
+      <button id="reset"></button>
+    </section>
+    <script src="js/bat.js"></script>
+  </body>
+</html>
