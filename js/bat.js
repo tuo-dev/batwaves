@@ -109,7 +109,6 @@ function waves() {
     this.y = batY;
     this.allReach = false;
     wideArry.push(this);
-    console.log(this);
   };
   this.update = function () {
     this.x += 7;
@@ -135,7 +134,6 @@ function waves() {
         this.y < secHawkArry[i].y + 44
       ) {
         this.cancle = true;
-        console.log(this.cancle);
       }
     }
   };
@@ -236,7 +234,6 @@ function hawkAtt() {
       lifeToggle
     ) {
       lifeDown();
-      console.log(lifeNum);
     }
   };
 }
@@ -267,7 +264,6 @@ function fruits() {
         if (!fruitsArry[i].getToggle) {
           fruitsArry[i].getToggle = true;
           fruitsArry.splice(i, 1);
-          console.log(wideNum);
         }
       }
     }
@@ -280,7 +276,6 @@ const setKey = () => {
       if (wavesToggle == true) {
         createWaves();
         wavesToggle = false;
-        // console.log(wavesArry)
       }
     }
     if (e.key == 'z') {
@@ -292,7 +287,6 @@ const setKey = () => {
       if (wideNum == 3) {
         wideNum = 2;
       }
-      console.log(wideNum);
     }
     if (e.key == 'x' && !boostToggle && !coolToggle) {
       boostToggle = true;
@@ -301,7 +295,6 @@ const setKey = () => {
   });
   window.addEventListener('keyup', (e) => {
     delete keysDown[e.key];
-    // console.log(keysDown)
     if (e.key == ' ') {
       wavesToggle = true;
     }
@@ -340,7 +333,6 @@ const createHawkAtt = () => {
     const interval = setInterval(() => {
       const att = new hawkAtt();
       att.init();
-      // console.log(hawkAttArry)
     }, 800);
   }, 3200);
 };
